@@ -1,7 +1,7 @@
 import React from 'react'
 import Items from './Items'
 
-function Avatar({ body, eyes, hair, clothing1, clothing2, clothing3, eyebrows, mouth, hat, glasses, earrings, neckwear, facialhair }) {
+function Avatar({ body, eyes, hair, clothing1, clothing2, clothing3, eyebrows, mouth, hat, glasses, earrings, neckwear }) {
   return (
     <div className='avatar'>
       <Items part="body" index={body} zIndex={1}/>
@@ -16,7 +16,6 @@ function Avatar({ body, eyes, hair, clothing1, clothing2, clothing3, eyebrows, m
       <Items part="accessories/glasses" index={glasses} zIndex={3}/>
       <Items part="accessories/earrings" index={earrings} zIndex={5}/>
       <Items part="accessories/neckwear" index={neckwear} zIndex={5}/>   
-      <Items part="facialhair" index={facialhair} zIndex={5}/>
       <Items part="noses" index={1} zIndex={3} />
     </div>
   )
